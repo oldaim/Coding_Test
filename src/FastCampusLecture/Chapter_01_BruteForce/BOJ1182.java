@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class BOJ1182 {
+public class BOJ1182 { // 실패 (강의좀 들어야될듯)
     static int N = 0;
     static int S = 0;
     static int sumEqualS;
@@ -25,7 +25,7 @@ public class BOJ1182 {
             union.add(reader.nextInt());
         }
 
-        backUpUnion = new ArrayList<>(union);
+
     }
 
     static boolean isEqualS(int[] sel, int count){
@@ -42,15 +42,18 @@ public class BOJ1182 {
 
     static void rec_func(int k , int count){
 
+        int tempInteger = 0;
+
         if(k == count + 1){
-            if(isEqualS(selected, count)) sumEqualS++;
+            System.out.print("");
         }
         else if(k == 1) {
 
             for (int i = 0; i < union.size(); i++) {
-                int tempInteger = union.get(i);
+                tempInteger = union.get(i);
                 selected[k] = union.remove(i);
 
+                if(isEqualS(selected, count)) sumEqualS++;
                 rec_func(k + 1, count);
 
                 selected[k] = 0;
@@ -64,8 +67,10 @@ public class BOJ1182 {
             for (int i = 0; i < union.size(); i++) {
                 if(selected[k-1] < union.get(i)) {
 
-                    int tempInteger = union.get(i);
+                    tempInteger = union.get(i);
                     selected[k] = union.remove(i);
+
+                    if(isEqualS(selected, count)) sumEqualS++;
 
                     rec_func(k + 1, count);
 
@@ -80,17 +85,16 @@ public class BOJ1182 {
     }
 
     static void roof_recFunc(){
-        for (int i = 1; i <= N ; i++) {
-            rec_func(1, i);
-            union = new ArrayList<>(backUpUnion);
-        }
+
+        rec_func(1, N);
+        System.out.println(sumEqualS);
+
     }
 
 
     public static void main(String[] args) {
         input();
         roof_recFunc();
-        System.out.println(sumEqualS);
     }
 
 
