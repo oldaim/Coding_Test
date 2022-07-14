@@ -1,12 +1,8 @@
 package FastCampusLecture.Chapter_01_BruteForce;
 
 import java.io.*;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import java.util.StringTokenizer;
-
-import static java.util.Arrays.asList;
 
 public class BOJ1759 {
     static int L = 0 , C = 0; // L : 문자열 자릿수 , C : 입력될 문자의 갯수

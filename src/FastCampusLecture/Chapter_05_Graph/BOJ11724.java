@@ -1,7 +1,10 @@
 package FastCampusLecture.Chapter_05_Graph;
 
 import java.io.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.StringTokenizer;
 
 public class BOJ11724 {
     static FastReader reader = new FastReader();

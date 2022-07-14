@@ -1,7 +1,10 @@
 package FastCampusLecture.Chapter_02_Sort;
 
 import java.io.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.StringTokenizer;
 
 public class BOJ1015 {
     // 0부터 N -1 까지수를 한 번씩 포함하고 있는 수열

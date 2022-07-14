@@ -1,7 +1,10 @@
 package FastCampusLecture.Chapter_01_BruteForce;
 
 import java.io.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.StringTokenizer;
 
 // N과 M 9
 public class BOJ15663 {

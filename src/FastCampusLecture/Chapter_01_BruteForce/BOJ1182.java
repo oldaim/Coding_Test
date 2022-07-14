@@ -2,7 +2,6 @@ package FastCampusLecture.Chapter_01_BruteForce;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.StringTokenizer;
 

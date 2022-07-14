@@ -2,7 +2,6 @@ package FastCampusLecture.Chapter_03_BinarySearch;
 
 import java.io.*;
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.StringTokenizer;
 
 public class BOJ2110 { // 접근은 맞았는데 , 설치하는 공유기 갯수 구하는 과정에서 오류가 발생했었음

@@ -1,7 +1,8 @@
 package FastCampusLecture.Chapter_03_BinarySearch;
 
 import java.io.*;
-import java.util.*;
+import java.util.Arrays;
+import java.util.StringTokenizer;
 
 public class BOJ7795 {
 
